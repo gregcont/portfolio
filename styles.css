@@ -36,13 +36,19 @@
 /* Navegación activa */
 .nav-link.active {
     font-weight: bold;
-    color: #007bff; /* Ajusta según tu diseño */
-    border-bottom: 2px solid currentColor; /* Opcional */
+    color: #bbbbbb; /* Ajusta según tu diseño */
+    /* border-bottom: 2px solid currentColor; Opcional */
 }
 
 a {
     text-decoration: none;
     color: #f8f1f1;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #bbbbbb;
+    } 
+    
 }
 
 
@@ -59,7 +65,7 @@ nav ul {
 
 body{
     margin: 3%;
-    background: #1c1b1b;
+    background: #101010;
     color: #f8f1f1;
     font-family: "Commitmono", monospace;
     font-weight: 100;
@@ -81,8 +87,7 @@ body{
 
 article {
         border-radius: 8px;
-        border-color: white;
-        border-style: solid;
+        border: #ffffff 1px solid;
         padding: 20px;
         
         h2 {
@@ -92,7 +97,7 @@ article {
         button {
             margin-top: 2%;
             padding: 10px 20px;
-            font-size: x-small;
+            font-size: normal;
             background-color: #fafafa;
             border-radius: 2px;
             letter-spacing: 2px;
@@ -101,7 +106,6 @@ article {
 
             .cta-link {
                 color: #282626;
-                font-weight: bold;
                 text-transform: uppercase;
             }
         }
