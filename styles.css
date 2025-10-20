@@ -23,7 +23,22 @@
     font-style: italic;
 }
 
+/* Transición de página */
+#page-container {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
 
+#page-container.fade-out {
+    opacity: 0;
+}
+
+/* Navegación activa */
+.nav-link.active {
+    font-weight: bold;
+    color: #007bff; /* Ajusta según tu diseño */
+    border-bottom: 2px solid currentColor; /* Opcional */
+}
 
 a {
     text-decoration: none;
@@ -39,7 +54,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    font-size: smaller;
+    font-size: normal;
 }
 
 body{
@@ -70,6 +85,9 @@ article {
         border-style: solid;
         padding: 20px;
         
+        h2 {
+            margin-top: 10%;
+        }
 
         button {
             margin-top: 2%;
