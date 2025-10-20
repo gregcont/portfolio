@@ -1,3 +1,129 @@
-h1 {
-    color: blue;
+
+/* Fuentes */
+@font-face {
+    font-family: "Commitmono";
+    src: url("fonts/CommitMono-400-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: "Commitmono";
+    src: url("fonts/CommitMono-400-Italic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: "Commitmono";
+    src: url("fonts/CommitMono-700-Italic.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #f8f1f1;
+}
+
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: smaller;
+}
+
+body{
+    margin: 3%;
+    background: #1c1b1b;
+    color: #f8f1f1;
+    font-family: "Commitmono", monospace;
+    font-weight: 100;
+    font-size: small;
+
+    h1{
+        font-size: xx-large;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: smaller;
+        color: #7a7a7a;
+    }
+}
+
+
+
+article {
+        border-radius: 8px;
+        border-color: white;
+        border-style: solid;
+        padding: 20px;
+        
+
+        button {
+            margin-top: 2%;
+            padding: 10px 20px;
+            font-size: x-small;
+            background-color: #fafafa;
+            border-radius: 2px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            font-family: "Commitmono", monospace;
+
+            .cta-link {
+                color: #282626;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+
+        .feature-item  {
+            border-bottom: #5b5959 1px solid;
+            line-height: 20px;
+        }
+
+        ul li {
+            font-size: x-small;
+            list-style-type: none;
+            margin: none;
+            padding: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: -39px;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        ul li svg {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            display: inline-block;
+            
+        }
+        
+}
+
+.features-main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
 }
