@@ -35,7 +35,7 @@
 
 /* Navegación activa */
 .nav-link.active {
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #bbbbbb; /* Ajusta según tu diseño */
     /* border-bottom: 2px solid currentColor; Opcional */
 }
@@ -63,6 +63,34 @@ nav ul {
     font-size: normal;
 }
 
+.main-button {
+    padding: 20px 30px;
+    font-size: normal;
+    background-color: #000000;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family: "Commitmono", monospace;
+    text-transform: uppercase;
+    border: #f8f1f1 1px solid;
+    transition: all 0.3s ease;
+
+    a {
+    color: #f8f1f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    }
+
+    &:hover {
+    background-color: #ffffff;
+
+    /* 👇 cambia el color del texto del enlace cuando el botón tiene hover */
+    a {
+        color: #000000;
+    }
+    }
+}
+
 body{
     margin: 3%;
     background: #101010;
@@ -83,69 +111,126 @@ body{
     }
 }
 
-
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 5%;
+    padding-bottom: 2%;
+}
 
 article {
-        border-radius: 8px;
-        border: #ffffff 1px solid;
-        padding: 20px;
+    border-radius: 8px;
+    border: #ffffff 1px solid;
+    padding: 20px;
         
-        h2 {
-            margin-top: 10%;
-        }
+    h2 {
+        margin-top: 10%;
+    }
 
-        button {
-            margin-top: 2%;
-            padding: 10px 20px;
-            font-size: normal;
-            background-color: #fafafa;
-            border-radius: 2px;
-            letter-spacing: 2px;
-            cursor: pointer;
-            font-family: "Commitmono", monospace;
+    button {
+        margin-top: 2%;
+        padding: 10px 20px;
+        font-size: normal;
+        background-color: #fafafa;
+        border-radius: 2px;
+        letter-spacing: 2px;
+        cursor: pointer;
+        font-family: "Commitmono", monospace;
 
-            .cta-link {
-                color: #282626;
-                text-transform: uppercase;
-            }
-        }
-
-        .feature-item  {
-            border-bottom: #5b5959 1px solid;
-            line-height: 20px;
-        }
-
-        ul li {
-            font-size: x-small;
-            list-style-type: none;
-            margin: none;
-            padding: none;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-left: -39px;
+        .cta-link {
+            color: #282626;
             text-transform: uppercase;
         }
+    }
 
-        p {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            line-height: 1.5;
-        }
+    .feature-item  {
+        border-bottom: #5b5959 1px solid;
+        line-height: 20px;
+    }
 
-        ul li svg {
-            width: 16px;
-            height: 16px;
-            vertical-align: middle;
-            display: inline-block;
-            
-        }
+    ul li {
+        font-size: x-small;
+        list-style-type: none;
+        margin: none;
+        padding: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: -39px;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    ul li svg {
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        display: inline-block;
+        
+    }
         
 }
 
 .features-main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
+    gap: 15px;
     margin-top: 20px;
 }
+
+
+
+.footer-container {
+    margin-top: 5%;
+    padding: 10px;
+    border-top: #5b5959 1px solid;
+    font-size: normal;
+    font-family: commitmono, monospace;
+    color: #ffffff;
+    list-style-type: none;
+    text-transform: uppercase;
+    
+
+    .footer-columns {
+        display: grid;
+        padding-bottom: 20px;
+        grid-template-columns: 60% 14% 14% 10%;
+    }
+
+    a {
+        color: #7a7a7a;
+        text-decoration: none;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    h3 {
+        font-family: commitmono;
+        color: #ffffff;
+        font-size: smaller;
+        font-weight: lighter;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        padding: 0;
+        color: #7a7a7a;
+        list-style-type: none;
+        font-size: smaller;
+        margin: 0;
+        line-height: 1.5;
+    }
+}
+
+
