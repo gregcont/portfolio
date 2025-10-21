@@ -47,8 +47,8 @@ a {
 
     &:hover {
         color: #bbbbbb;
-    } 
-    
+    }
+
 }
 
 
@@ -118,11 +118,33 @@ body{
     padding-bottom: 2%;
 }
 
+.cover {
+    max-width: 100%;
+    height: auto;
+    border: #7a7a7a 1px solid;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.colors {
+    display:inline-flex;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    gap: 1%;
+
+    .project{
+    width: calc((100% - 3%) / 4); /* 3% = 3 gaps entre 4 imágenes */
+    height: auto;
+    border-radius: 5%;
+    }
+}
+
 article {
     border-radius: 8px;
     border: #ffffff 1px solid;
     padding: 20px;
-        
+
     h2 {
         margin-top: 10%;
     }
@@ -171,9 +193,9 @@ article {
         height: 16px;
         vertical-align: middle;
         display: inline-block;
-        
+
     }
-        
+
 }
 
 .features-main{
@@ -194,7 +216,7 @@ article {
     color: #ffffff;
     list-style-type: none;
     text-transform: uppercase;
-    
+
 
     .footer-columns {
         display: grid;
