@@ -233,4 +233,24 @@ article {
     }
 }
 
+.copyright{
+    text-align: center;
+}
 
+.footer-container .footer-columns {
+    display: grid;
+    padding-bottom: 20px;
+    grid-template-columns: 60% 14% 14% 10%;
+    gap: 10px; /* opcional, separa un poco las columnas */
+}
+
+/* --- Versión móvil --- */
+@media (max-width: 768px) {
+    .footer-container .footer-columns {
+        grid-template-columns: 100%;
+        text-align: left; /* opcional */
+    }
+    .footer-container .footer-columns > * {
+        width: 100%; /* asegúrate de que cada columna use todo el ancho */
+    }
+}
